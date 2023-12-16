@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Квадрат Пифагора</title>
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<h1 class="h1">Квадрат Пифагора</h1>
+		<p class="subtitle">Введите дату рождения</p>
+		<form class="form">
+			<input id="date-input" type="text" placeholder="дд.мм.гггг" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}" required>
+			<input class="submit" type="submit" value="Расчитать">
+		</form>
+		<div class="table">
+			<div class="table__item table__item_big">
+				<div class="row">
+					<div class="title">Дата рождения</div>
+					<div class="number" id="date">-</div>
+				</div>
+				<div class="row">
+					<div class="title">Доп. числа</div>
+					<div class="number" id="addNums">-</div>
+				</div>
+				<div class="row">
+					<div class="title">Число судьбы</div>
+					<div class="number" id="fate">-</div>
+				</div>
+			</div>
+			<div class="table__item table__item_colored">
+				<div class="title">Темперамент</div>
+				<div class="number" id="temperament">-</div>
+			</div>
+			<!--  -->
+			<div class="table__item">
+				<div class="title">Характер</div>
+				<div class="number" id="character">-</div>
+			</div>
+			<div class="table__item">
+				<div class="title">Здоровье</div>
+				<div class="number" id="health">-</div>
+			</div>
+			<div class="table__item">
+				<div class="title">Удача</div>
+				<div class="number" id="luck">-</div>
+			</div>
+			<div class="table__item table__item_colored">
+				<div class="title">Цель</div>
+				<div class="number" id="goal">-</div>
+			</div>
+			<!--  -->
+			<div class="table__item">
+				<div class="title">Энергия</div>
+				<div class="number" id="energy">-</div>
+			</div>
+			<div class="table__item">
+				<div class="title">Логика</div>
+				<div class="number" id="logic">-</div>
+			</div>
+			<div class="table__item">
+				<div class="title">Долг</div>
+				<div class="number" id="debt">-</div>
+			</div>
+			<div class="table__item table__item_colored">
+				<div class="title">Семья</div>
+				<div class="number" id="family">-</div>
+			</div>
+			<!--  -->
+			<div class="table__item">
+				<div class="title">Интерес</div>
+				<div class="number" id="interest">-</div>
+			</div>
+			<div class="table__item">
+				<div class="title">Труд</div>
+				<div class="number" id="labour">-</div>
+			</div>
+			<div class="table__item">
+				<div class="title">Память</div>
+				<div class="number" id="memory">-</div>
+			</div>
+			<div class="table__item table__item_colored">
+				<div class="title">Привычки</div>
+				<div class="number" id="habits">-</div>
+			</div>
+			<!--  -->
+			<div class="table__item">
+				<div class="title">Быт</div>
+				<div class="number" id="life">-</div>
+			</div>
+		</div>
+		<h2 class="h2">ТУТ ВЫ МОЖЕТЕ ЗАДАТЬ ВОПРОС ПО МАТРИЦЕ:</h2>
+		<div class="social">
+			<a href="https://instagram.com/lucy.abramova?igshid=NGVhN2U2NjQ0Yg==" class="social__item">
+				<div class="social__icon">
+					<svg width="86" height="99" viewBox="0 0 86 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_1_91)">
+							<path d="M43.0192 27.2637C30.8103 27.2637 20.9625 37.183 20.9625 49.4807C20.9625 61.7783 30.8103 71.6977 43.0192 71.6977C55.2281 71.6977 65.0759 61.7783 65.0759 49.4807C65.0759 37.183 55.2281 27.2637 43.0192 27.2637ZM43.0192 63.9246C35.1295 63.9246 28.6795 57.4471 28.6795 49.4807C28.6795 41.5143 35.1103 35.0367 43.0192 35.0367C50.9281 35.0367 57.3589 41.5143 57.3589 49.4807C57.3589 57.4471 50.9089 63.9246 43.0192 63.9246ZM71.1228 26.3549C71.1228 29.236 68.8192 31.5369 65.9781 31.5369C63.1179 31.5369 60.8335 29.2166 60.8335 26.3549C60.8335 23.4932 63.1371 21.1729 65.9781 21.1729C68.8192 21.1729 71.1228 23.4932 71.1228 26.3549ZM85.7313 31.6143C85.4049 24.6727 83.8308 18.5239 78.7821 13.4578C73.7527 8.39182 67.6482 6.80627 60.7567 6.45823C53.654 6.05217 32.3652 6.05217 25.2625 6.45823C18.3902 6.78694 12.2857 8.37248 7.23705 13.4385C2.18839 18.5045 0.633475 24.6533 0.287939 31.5949C-0.115186 38.7492 -0.115186 60.1928 0.287939 67.3471C0.614279 74.2887 2.18839 80.4375 7.23705 85.5035C12.2857 90.5695 18.371 92.1551 25.2625 92.5031C32.3652 92.9092 53.654 92.9092 60.7567 92.5031C67.6482 92.1744 73.7527 90.5889 78.7821 85.5035C83.8116 80.4375 85.3857 74.2887 85.7313 67.3471C86.1344 60.1928 86.1344 38.7686 85.7313 31.6143ZM76.5554 75.0235C75.058 78.8133 72.1594 81.733 68.3777 83.2606C62.7147 85.5229 49.2772 85.0008 43.0192 85.0008C36.7612 85.0008 23.3045 85.5035 17.6607 83.2606C13.8982 81.7524 10.9995 78.8326 9.48303 75.0235C7.23705 69.3194 7.75535 55.7842 7.75535 49.4807C7.75535 43.1772 7.25624 29.6227 9.48303 23.9379C10.9804 20.1481 13.879 17.2283 17.6607 15.7008C23.3237 13.4385 36.7612 13.9606 43.0192 13.9606C49.2772 13.9606 62.7339 13.4578 68.3777 15.7008C72.1402 17.209 75.0388 20.1287 76.5554 23.9379C78.8013 29.642 78.283 43.1772 78.283 49.4807C78.283 55.7842 78.8013 69.3387 76.5554 75.0235Z" fill="#E4B489"/>
+						</g>
+						<defs>
+							<clipPath id="clip0_1_91">
+								<rect width="86" height="99" fill="white"/>
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<div class="social__text">lucy.abramova</div>
+			</a>
+			<a href="https://t.me/numerology_from_LU" class="social__item">
+				<div class="social__icon">
+					<svg width="96" height="100" viewBox="0 0 96 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M48 1.54889C21.4839 1.54889 0 23.0401 0 49.5652C0 76.0903 21.4839 97.5815 48 97.5815C74.5161 97.5815 96 76.0903 96 49.5652C96 23.0401 74.5161 1.54889 48 1.54889ZM70.2581 34.2116C69.5419 41.8013 66.4064 60.2333 64.8194 68.733C64.1419 72.3342 62.8258 73.5346 61.5484 73.6508C58.7613 73.9025 56.6516 71.8115 53.9419 70.0302C49.7226 67.2615 47.3226 65.5384 43.2387 62.8278C38.4968 59.7106 41.5742 57.9874 44.2645 55.18C44.9806 54.4443 57.2516 43.2727 57.4839 42.2659C57.5226 42.1304 57.5419 41.6657 57.2516 41.414C56.9613 41.1623 56.5548 41.2591 56.2645 41.3172C55.8387 41.4076 49.0903 45.8672 36.0194 54.696C34.1097 56.0125 32.3742 56.6515 30.8129 56.6127C29.0903 56.574 25.8 55.6447 23.3419 54.8509C20.3419 53.8828 17.9419 53.36 18.1548 51.6949C18.2581 50.8301 19.4516 49.946 21.7355 49.0424C35.7226 42.95 45.0516 38.9293 49.7226 36.9803C63.0581 31.4429 65.8258 30.4748 67.6258 30.4361C68.0323 30.4361 68.9032 30.5329 69.4839 30.9976C69.8628 31.3309 70.1043 31.7933 70.1613 32.2948C70.266 32.928 70.2984 33.5711 70.2581 34.2116Z" fill="#E4B489"/>
+					</svg>
+				</div>
+				<div class="social__text">numerology_from_LU</div>
+			</a>
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
