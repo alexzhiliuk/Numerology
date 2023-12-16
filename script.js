@@ -3,7 +3,7 @@ function clear() {
 	$(`#addNums`).html('-')
 	$(`#fate`).html('-')
 	$(`#character`).html('-')
-	$(`#daenergyte`).html('-')
+	$(`#energy`).html('-')
 	$(`#interest`).html('-')
 	$(`#health`).html('-')
 	$(`#logic`).html('-')
