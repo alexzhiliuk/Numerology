@@ -1,3 +1,24 @@
+function clear() {
+	$(`#date`).html('-')
+	$(`#addNums`).html('-')
+	$(`#fate`).html('-')
+	$(`#character`).html('-')
+	$(`#daenergyte`).html('-')
+	$(`#interest`).html('-')
+	$(`#health`).html('-')
+	$(`#logic`).html('-')
+	$(`#labour`).html('-')
+	$(`#luck`).html('-')
+	$(`#debt`).html('-')
+	$(`#memory`).html('-')
+	$(`#temperament`).html('-')
+	$(`#life`).html('-')
+	$(`#goal`).html('-')
+	$(`#goal`).html('-')
+	$(`#family`).html('-')
+	$(`#habits`).html('-')
+}
+
 function firstAdditionalNum(date) {
 	let sum = 0;
 	for (let num of date) {
@@ -61,6 +82,7 @@ function getAllNums(num, date, addNums) {
 
 $(".submit").click(function(e) {
 	e.preventDefault();
+	clear()
 	const date = $("#date-input").val()
 	// Additional nums
 	let additionalNums = []
