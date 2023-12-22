@@ -49,7 +49,7 @@ function thirdAdditionalNum(firstNum, date) {
 	} else {
 		var n = Number(date[0])
 	}
-	return firstNum - 2 * n;
+	return Math.abs(firstNum - 2 * n);
 }
 
 function getFateNum(firstNum) {
